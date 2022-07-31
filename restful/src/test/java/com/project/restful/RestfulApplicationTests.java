@@ -21,7 +21,7 @@ import com.project.restful.repository.ProductJpaRepository;
 @SpringBootTest
 class RestfulApplicationTests {
 
-	private ProductJpaRepository jpaRepository;
+//	private ProductJpaRepository jpaRepository;
 	
 	
 	
@@ -29,21 +29,21 @@ class RestfulApplicationTests {
 	void ProductControllerTest() {
 		
 		
-		ProductJpaRepository productJpaRepository = jpaRepository;
-		
-		
-				
-		 ProductController productController = new ProductController(productJpaRepository);
-		 
-		 Product product = new Product() ;
-		product.setProductName("masa");
-		product.setClientId((long)4);
-		product.setProductPrice(100);
-		
-		
-		 Product response = productController.updateOneProduct((long)13,(long) 2, product);
-		 List<Product> products = productController.getAll() ;		 
-		
+//		ProductJpaRepository productJpaRepository = jpaRepository;
+//		
+//		
+//				
+//		 ProductController productController = new ProductController(productJpaRepository);
+//		 
+//		 Product product = new Product() ;
+//		product.setProductName("masa");
+//		product.setClientId((long)4);
+//		product.setProductPrice(100);
+//		
+//		
+//		 Product response = productController.updateOneProduct((long)13,(long) 2, product);
+//		 List<Product> products = productController.getAll() ;		 
+//		
 	}
 
 }
